@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #F5FFFA;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(to right, #D799C5, #A7B9C9);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+}
+
+#currentTime {
+    font-family: Arial;
+    text-align: right;
+}
+
+nav {
+    display: flex;
+    justify-content: right;
+    background: linear-gradient(to right, black, white);
+    padding: 10px 0;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-size: 1.5em;
+}
+
+nav a:hover {
+    color: #00f2fe;
+}
+
+.container { 
+    width: auto; 
+    padding: 20px; 
+    box-sizing: border-box;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.section h1 {
+    font-size: 3em;
+    margin-bottom: 30px;
+    color: black;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #4facfe;
+    text-align: center;
+}
+
+.projects {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.about { 
+    background-image: url('Immage/Tag.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    padding: 40px; 
+    border-radius: 8px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.about img {
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+.about p {
+     color: black;
+    margin: 0;
+    text-align: justify;
+}
+
+ul.address-text {
+    padding: 0;
+}
+ul.address {
+    padding: 0;
+}
+ul.address {
+    margin-top: 2em;
+    padding-top: 0.5em;
+}
+ul.address li {
+    display: block;
+    margin-left:50px
+}
+ul.address li ul.address-text li {
+    display: inline-block;
+    font-size: 1em;
+    color: black;
+    margin-top: 1em;
+    font-weight: 400;
+}
+ul.address li ul.address-text li:nth-child(1){
+    width: 20%;
+    margin-left:10px
+}
+ul.address li ul.address-text li a {
+    color: #fff;
+    text-decoration:none;
+}
+ul.address li ul.address-text li a:hover{
+    color: #00a78e;
+}
+ul.address-text b {
+    color:black;
+    margin-right: 100px;
+    
+}
+
+.project {
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+    transition: transform 0.3s, background 0.3s; /* Add transition */
+}
+
+.project img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact a {
+    display: inline-block;
+    margin: 10px;
+    padding: 5px 5px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.contact a:hover {
+    background: #00f2fe;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+}

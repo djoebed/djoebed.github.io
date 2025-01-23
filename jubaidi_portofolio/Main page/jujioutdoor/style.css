@@ -1,0 +1,303 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease; /* Transisi halus untuk perubahan */
+    text-align: center; /* Tambahkan ini untuk memusatkan konten */
+}
+
+.container img {
+    max-width: 100%; /* Pastikan gambar tidak melampaui batas kontainer */
+    height: auto; /* Memastikan proporsi gambar tetap */
+    margin: 20px 0; /* Tambahkan margin vertikal untuk ruang di sekitar gambar */
+    width: 400px
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+h1 {
+    font-size: 2.5em; /* Ukuran font yang lebih besar untuk judul */
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.75em; /* Ukuran font yang lebih besar untuk subjudul */
+    margin: 15px 0;
+    color: #007bff; /* Mengubah warna subjudul */
+}
+
+.form-container, .filter-container, .list-container {
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #e9ecef; /* Latar belakang yang lembut */
+    transition: background-color 0.3s; /* Transisi pada hover */
+}
+
+.form-container:hover,
+.filter-container:hover,
+.list-container:hover {
+    background-color: #d0d4d6; /* Warna latar belakang lebih gelap saat hover */
+}
+
+input[type="text"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border 0.3s; /* Transisi untuk border */
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #007bff; /* Mengubah warna border saat fokus */
+    outline: none; /* Menghilangkan outline default */
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s, transform 0.2s; /* Transisi untuk tombol */
+}
+
+button:hover {
+    background-color: #218838;
+    transform: translateY(-2px); /* Animasi kecil saat hover */
+}
+
+button.tersewa {
+    text-decoration: line-through; /* Garis coret pada tombol yang telah disewa */
+    background-color: #dc3545; /* Warna merah untuk tombol yang sudah disewa */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background: #e9ecef;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s, transform 0.2s; /* Transisi untuk item daftar */
+}
+
+li div.button-group {
+    display: flex; /* Membuat grup tombol menjadi baris */
+    gap: 10px; /* Jarak antar tombol */
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+li {
+    background: #e9ecef;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s, transform 0.2s; /* Transisi untuk item daftar */
+}
+
+li:hover {
+    background-color: #d0d4d6; /* Latar belakang item daftar saat hover */
+    transform: translateY(-1px); /* Animasi kecil saat hover */
+}
+
+li.tersewa {
+    text-decoration: line-through; /* Garis coret pada daftar barang yang telah disewa */
+    color: gray; /* Mengubah warna teks barang yang disewa */
+}
+
+@media (max-width: 600px) {
+    button {
+        width: 100%; /* Tombol penuh lebar pada layar kecil */
+    }
+}body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease; /* Transisi halus untuk perubahan */
+    text-align: center; /* Tambahkan ini untuk memusatkan konten */
+}
+
+.container img {
+    max-width: 100%; /* Pastikan gambar tidak melampaui batas kontainer */
+    height: auto; /* Memastikan proporsi gambar tetap */
+    margin: 20px 0; /* Tambahkan margin vertikal untuk ruang di sekitar gambar */
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+h1 {
+    font-size: 2.5em; /* Ukuran font yang lebih besar untuk judul */
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.75em; /* Ukuran font yang lebih besar untuk subjudul */
+    margin: 15px 0;
+    color: #007bff; /* Mengubah warna subjudul */
+}
+
+.form-container, .filter-container, .list-container {
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #e9ecef; /* Latar belakang yang lembut */
+    transition: background-color 0.3s; /* Transisi pada hover */
+}
+
+.form-container:hover,
+.filter-container:hover,
+.list-container:hover {
+    background-color: #d0d4d6; /* Warna latar belakang lebih gelap saat hover */
+}
+
+input[type="text"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border 0.3s; /* Transisi untuk border */
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #007bff; /* Mengubah warna border saat fokus */
+    outline: none; /* Menghilangkan outline default */
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s, transform 0.2s; /* Transisi untuk tombol */
+}
+
+button:hover {
+    background-color: #218838;
+    transform: translateY(-2px); /* Animasi kecil saat hover */
+}
+
+button.tersewa {
+    text-decoration: line-through; /* Garis coret pada tombol yang telah disewa */
+    background-color: #dc3555; /* Warna merah untuk tombol yang sudah disewa */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background: #e9ecef;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s, transform 0.2s; /* Transisi untuk item daftar */
+}
+
+li:hover {
+    background-color: #d0d4d6; /* Latar belakang item daftar saat hover */
+    transform: translateY(-1px); /* Animasi kecil saat hover */
+}
+
+li.tersewa {
+    text-decoration: line-through; /* Garis coret pada daftar barang yang telah disewa */
+    color: gray; /* Mengubah warna teks barang yang disewa */
+}
+
+li div.button-group {
+    display: flex; /* Membuat grup tombol menjadi baris */
+    gap: 10px; /* Jarak antar tombol */
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+    button {
+        width: 100%; /* Tombol penuh lebar pada layar kecil */
+    }
+}
